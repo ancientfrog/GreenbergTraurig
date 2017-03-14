@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Project Description</th>
+                    <th>IDS Alignment</th>
+                    <th>Phase</th>
+                    <th>Sponsor</th>
+                    <th>Dept. Owner</th>
+                    <th>Target Delivery Date</th>
+                    <th>Impact to Firm</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: $component.datasources">
+                <tr>
+                    <td data-bind="text: title"></td>
+                    <td data-bind="html: description"></td>
+                    <td data-bind="text: alignment"></td>
+                    <td data-bind="text: phase"></td>
+                    <td data-bind="text: primaryPM"></td>
+                    <td data-bind="text: group"></td>
+                    <td data-bind="text: targetdelivery"></td>
+                    <td data-bind="html: impactOnObjective"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
