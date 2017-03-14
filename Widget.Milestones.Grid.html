@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Project Schedule Adherence</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Planned Start</th>
+                    <th>Planned End</th>
+                    <th>Actual Start</th>
+                    <th>Est. End</th>
+                    <th>Variance</th>
+                    <th>Rolling Aggregate</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: $component.datasources">
+                <tr>
+                    <td data-bind="text: phase"></td>
+                    <td data-bind="text: plannedstart"></td>
+                    <td data-bind="text: plannedend"></td>
+                    <td data-bind="text: actualstart"></td>
+                    <td data-bind="text: estend"></td>
+                    <td data-bind="text: variance"></td>
+                    <td data-bind="text: rollingaggregate"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

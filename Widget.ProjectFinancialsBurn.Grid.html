@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Project Financials &amp; Burndown</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Total Budget</th>
+                    <th>Project to Date Actuals</th>
+                    <th>Current Month Budget</th>
+                    <th>Current Month Actuals</th>
+                </tr>
+                </thead>
+                <tbody data-bind="with: $component.vendorData">
+                <tr>
+                    <td data-bind="text: totalbudget"></td>
+                    <td data-bind="text: actualstodate"></td>
+                    <td data-bind="text: currentmonthbudget"></td>
+                    <td data-bind="text: currentmonthactuals"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<style>
+    .projectDescription, .projectStatus{
+        width:33%;
+    }
+
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" data-bind="foreach: datasources">
+            <h2 data-bind="text: title"></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Project Description</th>
+                    <th>Project Start</th>
+                    <th>Project End</th>
+                    <th>% Complete</th>
+                    <th>Phase</th>
+                    <th>Health</th>
+                    <th>ETC (Cost)</th>
+                    <th>Project Status</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: datasources">
+                <tr>
+                    <td class="projectDescription" data-bind="text: description"></td>
+                    <td data-bind="text: targetstart"></td>
+                    <td data-bind="text: targetend"></td>
+                    <td data-bind="text: Pcomplete"></td>
+                    <td data-bind="text: phase"></td>
+                    <td data-bind="html: overAllHealth"></td>
+                    <td data-bind="text: cost"></td>
+                    <td class="projectStatus" data-bind="text: status"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

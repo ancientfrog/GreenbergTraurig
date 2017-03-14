@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Open Issues / Items</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Owner</th>
+                    <th>Open Issues</th>
+                    <th>Due</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: $component.datasources">
+                <tr>
+                    <td data-bind="text: owner"></td>
+                    <td data-bind="text: description"></td>
+                    <td data-bind="text: due"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
